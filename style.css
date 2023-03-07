@@ -1,36 +1,45 @@
 body {
     margin: 0;
-    background: #eee;
+    background-size: contain;
+    backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
     text-align: center;
+    background-image: url(imgs/cat-bg.jpg);
 
 }
+.bg-color{
+    background-image: linear-gradient(to bottom right, rgba(252,206,225,255) 0%, rgb(177, 163, 176) 100%);
+}
 .header{
-    background-color: #1F2937;
     color: aliceblue;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 32px;
+    padding-bottom: 0px;
 }
-.header-logo{
-    font-weight: bold;
-    font-size: 24px;
+.logo{
+    width: 72px;
+    height: auto;
+    margin-left: 24px;
 }
 .header-links{
     display: flex;
     gap: 16px;
     font-size: 18px;
     color: #E5E7EB;
+    font-weight: 600;
 }
 .hero{
-    background-color: #1F2937;
     padding: 32px;
     color:#F9FAF8;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 0px;
+
 }
 .hero-text{
     display: flex;
@@ -45,6 +54,7 @@ body {
 }
 .hero-sub{
     font-size: 18px;
+    text-shadow: 1px 1px 38px black;
     color: #E5E7EB;
     margin-top: 0;
 }
@@ -52,34 +62,62 @@ button{
     text-align: center;
     width: 110px;
     border: none;
-    background: #3882f6;
+    background-image: linear-gradient(to bottom right, rgb(158, 197, 255) 0%, rgb(224, 198, 209) 100%);
+    text-shadow: 1px 1px 38px black;
     padding: 10px;
     border-radius: 8px;
     color: #fff;
     font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.herocat{
+    width: 100px;
+    height: auto;
+    border: rgb(139, 116, 137);
+    border-radius: 8px;
+    border-width: 4px;
+    border-style: solid;
+    width: 520px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 32px;
+
 }
 .hero-image{
     padding: 64px;
-    background-color: rgb(72, 76, 88);
 }
-img{
-    border: 2px solid #3882f6;
+.content-images img{
+    border: rgb(139, 116, 137);
     border-radius: 8px;
-    width: 64px;
-    height: 64px;
+    border-width: 4px;
+    border-style: solid;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.fit-img img{
+    object-position: top;
+}
+.content{
+    color:#1F2937;
 }
 .content-images{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 64px;
     flex-wrap: wrap;
+    color:#1F2937;
+    font-size: 18px;
+    font-weight: 600;
 }
 .quote{
-    background-color: #E5E7EB;
+    background-color: rgba(243, 243, 243, 0.5); 
     padding: 16px 120px;
     display: flex;
     flex-direction: column;
+    backdrop-filter: blur(100px);
 }
 .quote p{
     font-size: 36px;
@@ -94,16 +132,18 @@ img{
 }
 .sign-up{
     display: flex;
-    background-color: #3882f6;
+    background-image: linear-gradient(to bottom right, rgb(224, 198, 209) 0%, rgb(155, 175, 206) 90%);
     justify-content: space-between;
     padding: 8px 80px;
     align-items: center;
     margin: 64px;
     color: #E5E7EB;
     border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .sign-text{
     text-align: left;
+    text-shadow: 1px 1px 38px black;
     font-size: 18px;
 }
 .sign-button button{
@@ -111,11 +151,12 @@ img{
     color: #fff;
     font-family: 'Roboto', arial;
     border-radius: 8px;
-    background-color: #3882F6;
+    background-color: rgb(224, 198, 209);
     font-size: 16px;
     padding: 6px ;
 }
 .footer{
-    background-color: #1F2937;   
+    background-image: linear-gradient(to bottom right, rgb(177, 163, 176) 0%, rgba(252,206,225,255) 100%);
     color: #E5E7EB;
+    text-shadow: 1px 1px 12px black;
 }
